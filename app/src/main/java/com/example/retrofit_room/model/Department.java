@@ -7,6 +7,14 @@ public class Department {
     private String name;
     private transient List<Professor> professors;
 
+    public Department() {
+    }
+
+    public Department(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }
