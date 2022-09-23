@@ -19,15 +19,4 @@ public interface DepartmentService {
     @GET("/departments")
     Call<List<Department>> getAlldepartments();
 
-    @GET("/departments/{department_id}")
-    Call<List<Department>> getDepartmentByID(@Path("department_id") Long id);
-
-    @POST("/departments")
-    Call <Department> createDepartment(@Body DepartmentDTO dto);
-
-    @PUT("/departments/{department_id}")
-    Call <Department> updateDepartment(@Path("department_id") Long id, @Body DepartmentDTO dto);
-
-    @DELETE("/departments/{department_id}")
-    Call <Department> deleteDepartment(@Path("department_id") Long id);
 }
