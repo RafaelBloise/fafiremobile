@@ -1,6 +1,5 @@
 package com.example.retrofit_room;
 
-import com.example.retrofit_room.service.CourseService;
 import com.example.retrofit_room.service.DepartmentService;
 
 import retrofit2.Retrofit;
@@ -22,7 +21,4 @@ public class RetrofitConfig {
         return retrofit.create(DepartmentService.class);
     }
 
-    public CourseService courseService(){
-        return retrofit.create(CourseService.class);
-    }
 }

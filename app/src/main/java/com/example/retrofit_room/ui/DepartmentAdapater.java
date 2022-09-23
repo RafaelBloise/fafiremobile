@@ -20,6 +20,11 @@ public class DepartmentAdapater extends RecyclerView.Adapter<DepartmentItemHolde
         this.departments = departments;
     }
 
+    public void configureDepartmentAdapter(List<Department> departments) {
+       this.departments = departments;
+       notifyDataSetChanged();
+    };
+
     @NonNull
     @Override
     public DepartmentItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

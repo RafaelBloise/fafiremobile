@@ -6,7 +6,6 @@ public class Professor {
     private int id;
     private String name;
     private String cpf;
-    private List<Allocation> allocations;
     private Department department;
 
 
@@ -32,14 +31,6 @@ public class Professor {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public List<Allocation> getAllocations() {
-        return allocations;
-    }
-
-    public void setAllocations(List<Allocation> allocations) {
-        this.allocations = allocations;
     }
 
     public Department getDepartment() {

@@ -16,17 +16,14 @@ public class DepartmentItemHolder extends RecyclerView.ViewHolder {
 
     public DepartmentItemHolder (@NonNull View itemView){
         super(itemView);
-
         tvName = itemView.findViewById(R.id.tvDepartmentName);
     }
 
     public void setupItens(String nome){
         tvName.setText(nome);
-
         tvName.setOnClickListener(view -> {
             Toast.makeText(tvName.getContext(), "TOAST", Toast.LENGTH_SHORT).show();
         });
-
     }
 
 
